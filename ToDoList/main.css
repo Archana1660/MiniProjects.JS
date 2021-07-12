@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text {
+  color: white;
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form {
+  border: 1px solid yellow;
+  box-shadow: 1px 1px 4px 3px white;
+  padding: 1rem;
+}
+
+label {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+.form-control {
+  width: 50%;
+  text-align: left;
+  margin: 7px auto;
+}
+
+.list-item-wrapper {
+  margin-top: 6em;
+  border: 1px solid yellow;
+  box-shadow: 1px 1px 4px 3px white;
+  padding: 1rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
