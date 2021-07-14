@@ -24,6 +24,9 @@ label {
 
 li {
   color: white;
+  display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 .form-control {
@@ -43,4 +46,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.fall {
+  opacity: 0;
 }
