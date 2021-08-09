@@ -1,0 +1,29 @@
+css pseudo selectors
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+javascript:-
+1. const seats = document.querySelectorAll('.row .seat:not(.occupied)');
+get the element under row with seat class without occupied class
+
+2. container.addEventListener('click', (e) => {
+  //contains is to check if the classList contain seat "class"
+    if (e.target.classList.contains('seat') && !(e.target.classList.contains('occupied'))) {
+        //toggle is to select and deselect
+        e.target.classList.toggle('selected')
+        updateSelectedCount();
+
+    }
+})
+
+3. store array of item in localStorage, always convert to string with JSON.stringify
+    localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex))
+
+4. to get string items from localStorage, always convert it to array with JSON.parse
+const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));

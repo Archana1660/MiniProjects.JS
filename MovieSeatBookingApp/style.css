@@ -15,6 +15,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.row {
+  display: flex;
+}
+
 .movie-container {
   margin: 20px 0;
 }
@@ -29,6 +33,11 @@ body {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
 }
 
 .seat {
@@ -58,6 +67,40 @@ body {
   margin-left: 18px;
 }
 
-.row {
+/*seat not having occupied class, on hover should do these*/
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  list-style: none;
   display: flex;
+  padding: 1rem;
+}
+
+.showcase li {
+  margin: 0 4px;
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
 }
